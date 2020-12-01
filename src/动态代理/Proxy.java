@@ -10,12 +10,17 @@ public class Proxy implements InvocationHandler {
     public Object bind(Object obj){
         this.target = obj;
         return java.lang.reflect.Proxy.newProxyInstance(
-                obj.getClass().getClassLoader(),
-                obj.getClass().getInterfaces(),
+                obj.getClass().getClassLoader(),       //类的加载器
+                obj.getClass().getInterfaces(),        //代理对象挂在哪个接口下
                 this
         );
     }
 
+    /**
+     * @param proxy 代理对象
+     * @param method 被调用的方法
+     * @param args 方法的参数
+     * */
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         Object result = null;

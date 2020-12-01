@@ -1,5 +1,6 @@
 package stream;
 
+import java.util.Collections;
 import java.util.stream.Stream;
 
 /**
@@ -15,5 +16,10 @@ public class TestReduce {
             a = a + b;
             return a;
         }));
+        /*System.out.println(Integer.MAX_VALUE);
+        System.out.println(Integer.MIN_VALUE);
+        System.out.println(-17%10);*/
+        Class<? super String> clazz = String.class.getSuperclass();
+        System.out.println(clazz);
     }
 }
