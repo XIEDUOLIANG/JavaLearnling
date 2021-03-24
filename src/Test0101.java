@@ -62,5 +62,10 @@ public class Test0101 {
             }
         }
         System.out.println(list1);
+
+        int[] nums = new int[5];
+        for (int num:nums) {
+            System.out.println(num);
+        }
     }
 }

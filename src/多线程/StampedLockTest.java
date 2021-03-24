@@ -9,7 +9,7 @@ import java.util.concurrent.locks.StampedLock;
  * @author XieDuoLiang
  * @date 2020/10/21 下午3:23
  */
-public class StampedLockTest {
+/*public class StampedLockTest {
 
     public static void main(String[] args) throws InterruptedException {
         var point = new Point();
@@ -39,9 +39,9 @@ public class StampedLockTest {
             }
         });
         addPoint.start();
-        /*while (!addPoint.isAlive()) {
+        *//*while (!addPoint.isAlive()) {
 
-        }*/
+        }*//*
         addPoint.join();
         Thread.sleep(1000);
         for (var getPoint:getPoints) {
@@ -72,9 +72,9 @@ class Point{
         long stamp = stampedLock.tryOptimisticRead();
 
         //读 5 的倍数
-        /*while (!(this.x/5 == 0 && this.y/5 == 0)){
+        *//*while (!(this.x/5 == 0 && this.y/5 == 0)){
             stampedLock.wait();
-        }*/
+        }*//*
         double currentX = this.x;
         double currentY = this.y;
 
@@ -82,9 +82,9 @@ class Point{
             //读的过程中，发生了写入，获取悲观读锁，重新读
             stamp = stampedLock.readLock();
             try {
-                /*while (!(this.x/5 == 0 && this.y/5 == 0)){
+                *//*while (!(this.x/5 == 0 && this.y/5 == 0)){
                     stampedLock.wait();
-                }*/
+                }*//*
                 currentX = this.x;
                 currentY = this.y;
             } finally {
@@ -94,4 +94,4 @@ class Point{
 
         return Math.sqrt(currentX*currentX+currentY*currentY);
     }
-}
+}*/

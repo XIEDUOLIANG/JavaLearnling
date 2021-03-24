@@ -10,4 +10,11 @@ public class SubjectImpl implements Subject{
     public void doAnotherThing() {
         System.out.println("实现类-实现方法调用2");
     }
+
+    @Override
+    public void hello(String str) {
+
+    }
+
+
 }

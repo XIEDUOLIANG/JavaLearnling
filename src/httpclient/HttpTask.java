@@ -3,13 +3,12 @@ package httpclient;
 import lombok.Data;
 import lombok.SneakyThrows;
 
-import java.net.http.HttpClient;
 
 /**
  * @author XieDuoLiang
  * @date 2020/11/18 下午9:35
  */
-@Data
+/*@Data
 public class HttpTask implements Runnable{
 
     private HttpClient httpClient;
@@ -20,7 +19,7 @@ public class HttpTask implements Runnable{
         this.httpClient = httpClient;
     }
 
-    /**
+    *//**
      * When an object implementing interface <code>Runnable</code> is used
      * to create a thread, starting the thread causes the object's
      * <code>run</code> method to be called in that separately executing
@@ -30,7 +29,7 @@ public class HttpTask implements Runnable{
      * take any action whatsoever.
      *
      * @see Thread#run()
-     */
+     *//*
     @SneakyThrows
     @Override
     public void run() {
@@ -40,4 +39,4 @@ public class HttpTask implements Runnable{
         }
     }
 
-}
+}*/

@@ -1,10 +1,9 @@
 package httpclient;
 
+import sun.net.www.http.HttpClient;
+
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 import java.util.concurrent.ExecutorService;
@@ -20,7 +19,7 @@ public class Client {
     //static HttpClient httpClient = HttpClient.newBuilder().build();
 
     public static void main(String[] args) throws InterruptedException {
-        ExecutorService executor = Executors.newFixedThreadPool(1000);
+        /*ExecutorService executor = Executors.newFixedThreadPool(1000);
         for (int i = 0; i < 1000; i++) {
             //System.out.println(i);
             //每个线程创建一个httpClient，导致每个线程占用内存很大
@@ -30,6 +29,6 @@ public class Client {
         }
         Thread.sleep(2000L);
         executor.shutdownNow();
-        System.out.println(HttpTask.result);
+        System.out.println(HttpTask.result);*/
     }
 }

@@ -1,9 +1,9 @@
 package httpclient;
 
+import com.sun.deploy.net.HttpRequest;
+import sun.net.www.http.HttpClient;
+
 import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
 
@@ -14,11 +14,11 @@ import java.time.Duration;
 public class SendHttp {
 
     public Integer sendHttp(HttpClient httpClient) throws Exception {
-        String url = "http://localhost:8886/single/single/test";
+        /*String url = "http://localhost:8886/single/single/test";
         String body = "num=10";
         HttpRequest request = HttpRequest.newBuilder(new URI(url))
                 // 设置Header:
-                .header("Accept", "*/*")
+                .header("Accept", "")
                 .header("Content-Type", "application/x-www-form-urlencoded")
                 // 设置超时:
                 .timeout(Duration.ofSeconds(10))
@@ -30,7 +30,7 @@ public class SendHttp {
         int s = Integer.parseInt(response.body());
         if (s % 10000 == 0) {
             return s;
-        }
+        }*/
         return 0;
     }
 }

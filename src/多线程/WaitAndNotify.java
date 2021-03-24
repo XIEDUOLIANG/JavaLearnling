@@ -8,7 +8,7 @@ import java.util.Queue;
  * @author XieDuoLiang
  * @date 2020/10/21 下午1:44
  */
-public class WaitAndNotify {
+/*public class WaitAndNotify {
 
     public static void main(String[] args) throws InterruptedException {
         var taskQueue = new TaskQueue();
@@ -63,4 +63,4 @@ class TaskQueue{
         }
         return queue.remove();
     }
-}
+}*/

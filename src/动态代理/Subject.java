@@ -5,4 +5,6 @@ public interface Subject {
     void doSomething();
 
     void doAnotherThing();
+
+    void hello(String str);
 }

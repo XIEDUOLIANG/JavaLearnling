@@ -61,14 +61,14 @@ public class TestException {
         //1.创建流emps.stream();
         //2.流的中间操作
         //2.1、filter——接收 Lambda ， 从流中排除某些元素。
-        Stream<Employee> stream = emps.stream().filter(x -> {
+        /*Stream<Employee> stream = emps.stream().filter(x -> {
             System.out.println("filter.....");
             return x.getAge() > 18;
         });
         //3.终止流
         //stream.forEach(System.out :: println);
         Stream<String> stringStream = List.of("1","2","3").stream();
-        new String("123").lines();
+        new String("123").lines();*/
         
 
 

@@ -15,7 +15,7 @@ import java.util.stream.Stream;
  * @author XieDuoLiang
  * @date 2020/9/30 上午10:47
  */
-public class TraverseFiles {
+/*public class TraverseFiles {
 
     public static void main(String[] args) {
 
@@ -31,9 +31,9 @@ public class TraverseFiles {
         System.out.println("执行时间："+(((double)timeAfter-(double)timeBefore)/(double)1000)+"s");
     }
 
-    /**
+    *//**
      * 递归
-     * */
+     * *//*
     public static void printlnFiles(File file,int deep){
 
         StringBuilder deepStr = new StringBuilder();
@@ -59,11 +59,11 @@ public class TraverseFiles {
         }
     }
 
-    /**
+    *//**
      * 栈
      * 1.将files数组压入栈
      * 2.取栈的头部继续获取files，又压入栈
-     * */
+     * *//*
     public static void printlnFiles(File file){
 
         Stack<File> fileStack = new Stack<>();
@@ -101,4 +101,4 @@ public class TraverseFiles {
         }
 
     }
-}
+}*/

@@ -13,7 +13,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
-public class HttpServer {
+/*public class HttpServer {
 
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = new ServerSocket(8080);
@@ -88,4 +88,4 @@ class Handler implements Runnable{
         writer.flush();
 
     }
-}
+}*/
